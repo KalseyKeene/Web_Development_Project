@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Haven Bookstore</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #353461;
+        color: #131c26;
+      }
+
+      header {
+        background-color: #2e2e4e;
+        color: #c1cfd6;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        font-size: 40px;
+      }
+
+      header img {
+        vertical-align: middle;
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #5c2e5c;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #c1cfd6;
+        padding: 14px 20px;
+        display: block;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      nav ul li a:hover {
+        background-color: #742c36;
+      }
+
+      .half-container {
+        display: flex;
+        height: 50vh;
+        background-color: #3f5461;
+      }
+
+      .half-container .left,
+      .half-container .right {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .half-container .left img,
+      .half-container .right img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .half-container h1 {
+        font-family: Georgia, serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #c1cfd6;
+      }
+
+      .half-container p {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #c1cfd6;
+        text-align: left;
+      }
+
+      .bottom-banner {
+        background-color: #5c2e5c;
+        color: #c1cfd6;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      .bottom-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 30%;
+      }
+
+      .info {
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .hours {
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+      }
+
+      .social-links a {
+        color: #c1cfd6;
+        text-decoration: none;
+        margin: 5px;
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+      }
+
+      .social-links a:hover {
+        color: #742c36;
+      }
+
+      /* New styles for form elements */
+      form {
+        background-color: #2e2e4e;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: 20px auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 2px solid #c1cfd6;
+        background-color: #444c64;
+        color: #c1cfd6;
+        font-size: 16px;
+        transition: all 0.3s ease;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #742c36;
+        outline: none;
+        background-color: #3f5461;
+      }
+
+      button {
+        padding: 15px 30px;
+        border: none;
+        background-color: #5c2e5c;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #742c36;
+      }
+
+      #subscribeButton {
+        padding: 10px 20px;
+        background-color: #5c2e5c;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      #subscribeButton:hover {
+        background-color: #742c36;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="Logo.png" alt="Book Haven Logo" />
+      Book Haven Bookstore
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="half-container">
+      <div class="left"><img src="Client3_Book1.png" /></div>
+      <div class="right">
+        <h1>Highlights/Blog Post</h1>
+        <p>This is where you can add your paragraph text about the book or highlight.</p>
+      </div>
+    </div>
+
+    <div class="half-container">
+      <div class="left">
+        <h1>Highlights/Blog Post</h1>
+        <p>This is where you can add your paragraph text about the book or highlight.</p>
+      </div>
+      <div class="right"><img src="Client3_Book2.png" /></div>
+    </div>
+
+    <div class="half-container">
+      <div class="left"><img src="Client3_Book3.png" /></div>
+      <div class="right">
+        <h1>Highlights/Blog Post</h1>
+        <p>This is where you can add your paragraph text about the book or highlight.</p>
+      </div>
+    </div>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button id="contactSubmit" type="submit">Submit</button>
+    </form>
+
+    <footer>
+      <button id="subscribeButton">Subscribe</button>
+    </footer>
+
+    <div class="bottom-banner">
+      <div class="bottom-box">
+        <div class="info">Contact</div>
+        <div class="info">+1 (123) 456-7890</div>
+        <div class="info">Email</div>
+        <div class="info">contact@bookhaven.com</div>
+      </div>
+
+      <div class="bottom-box">
+        <div class="info">Hours of Operation:</div>
+        <div class="hours">
+          Monday–Friday: 9 a.m. to 8 p.m.<br />
+          Saturday: 10 a.m. to 6 p.m.<br />
+          Sunday: 11 a.m. to 5 p.m.
+        </div>
+      </div>
+
+      <div class="bottom-box">
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var subscribeButton = document.getElementById("subscribeButton");
+
+        subscribeButton.addEventListener("click", function() {
+          alert("Thank you for subscribing!");
+        });
+      });
+
+      const contactFormButton = document.getElementById("contactSubmit");
+      if (contactFormButton) {
+        contactFormButton.addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent form submission
+
+          const name = document.getElementById("name").value;
+          const message = document.getElementById("message").value;
+
+          const feedback = {
+            name: name,
+            message: message,
+            date: new Date().toISOString()
+          };
+
+          let feedbackList = JSON.parse(localStorage.getItem("feedbackList")) || [];
+          feedbackList.push(feedback);
+          localStorage.setItem("feedbackList", JSON.stringify(feedbackList));
+
+          alert("Thank you for your feedback!");
+          document.getElementById("contactForm").reset(); // Optional: reset form fields
+        });
+      }
+    </script>
+  </body>
+</html>
